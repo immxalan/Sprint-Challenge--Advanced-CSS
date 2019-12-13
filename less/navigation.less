@@ -1,1 +1,26 @@
 // Navigation code here
+.nav{
+    background: @wild-sand;
+    padding-top: 3%;
+    .flexbox-mixin-column;
+    -webkit-animation-name: shift;
+    -webkit-animation-duration: 4s;
+    animation-name: shift;
+    animation-duration: 4s;
+    @-webkit-keyframes shift{
+        0% {background-color: black}
+        25% {background-color: @river-bend}
+        50% {background-color: @shuttle-gray}
+        100% {background-color: @wild-sand}
+    }
+    .home-title{
+        font-size: 4.0rem;
+        text-align: center;
+    }
+    .nav-elements{
+        .flexbox-mixin-row;
+        padding: 1% 0
+    }
+    
+}
+
