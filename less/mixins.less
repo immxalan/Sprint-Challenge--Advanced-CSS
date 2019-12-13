@@ -1,1 +1,27 @@
 // Mixins Here
+.flexbox-mixin-column{
+    display: flex;
+    flex-flow: column wrap;
+}
+.flexbox-mixin-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly
+}
+.button-mixin(@align, @justify){
+    display: block;
+    background-color:@btn-bg-color;
+    color:@porcelain;
+    font-size: 1.8rem;
+    height: 45px;
+    width: 125px;
+    border-radius: 10px;
+    margin: 0 10px 20px;
+    text-align: @align;
+    justify-content: @justify;
+    padding-top: 15px;
+    &:hover{
+        background-color: @porcelain;
+        color: @btn-bg-color;
+    }
+}
